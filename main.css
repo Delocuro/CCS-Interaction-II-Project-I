@@ -1,0 +1,199 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 0 0 0;
+    background-color: #2f2926;
+}
+
+h1 {
+    margin: 0 0 0 0;
+    font-family: "tablet-gothic-condensed", "Helvetica", sans-serif;
+    font-weight: 100;
+    font-size: 24px;
+}
+
+.switchBox {
+    cursor: pointer;
+    position: fixed;
+    top: 50px;
+    left: 50vw;
+    width: 250px;
+    height: 50px;
+    border: 1px solid #e5dad1;
+    border-radius: 25px;
+    background-color: #2f2926;
+    transform: translate(-50%, 0);
+}
+
+.switch {
+    position: absolute;
+    z-index: 1000;
+    top: 5px;
+    left: 5px;
+    width: 38px;
+    height: 38px;
+    border: 2px solid #faa624;
+    border-radius: 20px;
+    background-color: #2f2926;
+    transition: left 500ms ease;
+}
+
+.on {
+    left: 205px;
+    background-color: #2f2926;
+}
+
+.boxText {
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    width: 80%;
+    text-align: center;
+    background-color: #2f2926;
+    transform: translate(-50%, -50%);
+}
+
+.boxText h1 {
+    color: #e5dad1;
+}
+
+.onText h1 {
+    color: #e5dad1;
+}
+
+.invisible {
+    opacity: 0;
+}
+
+.photoBox {
+    position: fixed;
+    top: 50vh;
+    left: 50vw;
+    min-width: 200px;
+    min-height: 200px;
+    width: 80vmin;
+    height: 80vmin;
+    max-width: 480px;
+    max-height: 480px;
+    background: #2f2926;
+    border: 1px #2f2926 solid;
+    overflow: hidden;
+    transform: translate(-50%, -50%);
+    transition: opacity 350ms ease;
+}
+
+.photoStrip {
+    width: 2500%;
+    transition: 200ms ease;
+}
+
+.photoStrip img {
+    float: left;
+    margin: 0 0 0 0;
+    width: 4%;
+}
+
+.crumpleMap {
+    background-color: #2f2926;
+}
+
+.crumplometer {
+    position: fixed;
+    bottom: 120px;
+    left: 50vw;
+    width: 300px;
+    height: 1px;
+    max-width: 440px;
+    background-color: #e5dad1;
+    transform: translate(-50%, 0);
+}
+
+.slideRoom {
+    position: fixed;
+    left: 50%;
+    bottom: 120px;
+    width: 300px;
+    height: 40px;
+    max-width: 440px;
+    transform: translate(-50%, 50%);
+}
+
+.slideButton {
+    margin: 0 -20px 0 -20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: #2f2926;
+    border: 2px solid #faa624;
+    cursor: move;
+}
+
+.slideText {
+    position: fixed;
+    bottom: 40px;
+    left: 50vw;
+    margin: 0 0 0 0;
+    color: #e5dad1;
+    transform: translate(-50%, 0);
+}
+
+@media only screen and (max-height: 600px) {
+    .photoBox {
+        width: 40vmin;
+        height: 40vmin;
+    }
+}
+
+@media only screen and (min-width: 420px) {
+    h1 {
+        font-size: 18px;
+    }
+    
+    .switchBox {
+        top: 5vh;
+        width: 300px;
+        height: 30px;
+    }
+    
+    .photoBox {
+        width: 60vmin;
+        height: 60vmin;
+    }
+    
+    .photoStrip {
+        width: 2500%;
+    }
+    
+    .switch {
+        top: 2px;
+        left: 2px;
+        width: 24px;
+        height: 24px;
+    }
+    
+    .on {
+        left: 272px;
+    }
+    
+    .crumplometer {
+        bottom: 15vh;
+    }
+    
+    .slideRoom {
+        height: 26px;
+        bottom: 15vh;
+        transform: translate(-50%, 50%);
+    }
+    
+    .slideButton {
+        width: 26px;
+        height: 26px;
+    }
+    
+    .slideText {
+        bottom: 5vh;
+    }
+}
